@@ -1,0 +1,23 @@
+{
+  "name": "freecodecamp-mernstack-project-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "echo 'No build step required for backend'"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2",
+    "mongoose": "^8.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
