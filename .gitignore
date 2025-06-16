@@ -1,3 +1,10 @@
+# Ignore Files and Directories from Backend
 backend/.env
 backend/node_modules/
-commit_history.txt
+Br_commit_history.txt
+
+# Ignore Files and Directories from Frontend
+frontend/dist/
+frontend/node_modules/
+frontend/.env
+frontend/Fr_Commit_History.txt
