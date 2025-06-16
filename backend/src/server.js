@@ -1,37 +1,45 @@
-import express from "express";
-import moongoose from "mongoose";
-import notesRoutes from "../src/routes/notesRoutes.js";
-import { connectDB } from "../config/db.js";
-import dotenv from "dotenv";
+// This file sets up the Express server and connects to MongoDB.
 
-// Loads environment variables from a .env file into process.env. This lets you use variables like process.env.PORT or process.env.MONGO_URI in your code.
+// Import necessary modules
+import dotenv from "dotenv";
+import express from "express";
+import mongoose from "mongoose";
+import { connectDB } from "../config/db.js";
+import notesRoutes from "./routes/notesRoutes.js";
+import rateLimiter from "./middleware/rateLimiter.js";
+
+// Load environment variables from .env file
 dotenv.config();
 
 // Initialize Express application
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT
 
+// Home Page Route
 app.get('/', (req, res) => {
-    res.status(200).send("Welcome to the Notes API!"); // Home route
+    res.status(200).send("Welcome to the Notes API!"); // Simple welcome message
 });
 
-// Middlewares
-app.use(express.json()); // Middleware to parse JSON bodies
-app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded bodies
+// Middleware to parse JSON and URL-encoded bodies
+app.use(express.json()); // Parse JSON bodies
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
+// Rate Limiting Middleware (protects all routes)
+app.use(rateLimiter);
 
+// Notes API routes
+app.use("/api/notes", notesRoutes);
 
-app.use("/api/notes", notesRoutes); // Use the imported notes routes
-
-// Connect to MongoDB and then start the server
-connectDB().then(() => {
-    app.listen(PORT, () => {
-        console.log("MongoDB DataBase connected successfully and Development Server running on port:", PORT);
+// Connect to MongoDB and start the server only after successful connection
+connectDB()
+    .then(() => {
+        // Starting the server if the DB connection is successful
+        app.listen(PORT, () => {
+            // Log the server start message with the port number
+            console.log("Development is Server running on port:", PORT);
+        });
+    })
+    .catch((error) => {
+        // Log the error if the DB connection fails
+        console.error("Failed to connect to MongoDB:", error);
     });
-}).catch((error) => {
-    console.error("Failed to connect to MongoDB:", error);
-});
-
-
-// MongoDB connection string password:
-// X35zv1kSIZG74YOB 
