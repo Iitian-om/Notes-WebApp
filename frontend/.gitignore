@@ -1,3 +1,8 @@
+# Ignore Files and Directories from Frontend
+frontend/.env
+frontend/node_modules/
+frontend/Fr_Commit_History.txt
+
 # Logs
 logs
 *.log

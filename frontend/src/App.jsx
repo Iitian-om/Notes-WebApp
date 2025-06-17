@@ -11,12 +11,15 @@ import ViewNotePage from "./pages/ViewNotePage";
 import NoteDetailsPage from "./pages/NoteDetailsPage";
 import DevelopersPage from "./pages/DevelopersPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import toast from "react-hot-toast";
 
 // Main component for the App
 const Notes_WebApp = () => {
   return (
     // Main container for the application
     <div>
+      <button onClick={() => toast.error("uvuf")}>Click me</button>
+      {/* Setting up the routes for the application */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

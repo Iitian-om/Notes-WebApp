@@ -1,0 +1,66 @@
+Commit History for freecodingcamp-mernstack-project
+
+1. Initial REST API setup with .gitignore  
+   - Set up Express server and basic REST API structure.
+   - Added .gitignore to exclude .env and node_modules from version control.
+
+2. Add MongoDB connection and Note model  
+   - Implemented MongoDB connection using Mongoose.
+   - Created Note schema and model with timestamps.
+
+3. Implement CRUD controllers and routes for notes  
+   - Added controllers for creating, reading, updating, and deleting notes.
+   - Set up Express routes for all note operations.
+
+4. Add dotenv for environment variable management  
+   - Integrated dotenv to securely manage sensitive configuration.
+
+5. Implement Upstash rate limiting middleware  
+   - Added Upstash Redis and Ratelimit for API rate limiting.
+   - Created middleware to limit requests per IP address.
+
+6. Improve error handling and code comments  
+   - Enhanced error handling in controllers and middleware.
+   - Added descriptive comments for better code clarity.
+
+7. Update project documentation and commit history  
+   - Added detailed commit history for project tracking.
+   - Updated README and documentation as needed.
+
+*This file provides a summary of major commits and changes for easy project tracking.* 
+
+
+
+
+
+
+
+
+
+
+
+
+[33mcommit 9b829338e5c9a3a26dee8ba00f99f7ae16e8db22[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Om Kumar <iitian-om@users.noreply.github.com>
+Date:   Mon Jun 16 22:11:47 2025 +0530
+
+    V1 - Initial Server SetUp, Add Middilewares, Request Limit Set
+
+[33mcommit 6c788a790ade7713dff56ca811f9a3c934abf249[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 044a3be 96153b3
+Author: Om Kumar <iitian-om@users.noreply.github.com>
+Date:   Sat Jun 14 18:55:57 2025 +0530
+
+    Added Readme
+
+[33mcommit 96153b3bf41bbf563995e51c132cd3c15ed99f3d[m
+Author: Om Kumar <om_24a12res995@iitp.ac.in>
+Date:   Sat Jun 14 18:45:24 2025 +0530
+
+    Initial commit
+
+[33mcommit 044a3be1837d0e789d29792a974215e1d27e8744[m
+Author: Om Kumar <iitian-om@users.noreply.github.com>
+Date:   Sat Jun 14 18:39:52 2025 +0530
+
+    Initialized project and REST API set up
