@@ -10,10 +10,10 @@
 - **Author:** Om Kumar <<iitian-om@users.noreply.github.com>>
 - **Date:** Tue Jun 17 00:12:59 2025 +0530
 
-### V1 - Frontend Initialised
+#### V1 - Frontend Initialised
 
-#### Details:
-- 🚀 **Basic Frontend App** created using **VITE** (React + JavaScript) and folder structure set up.
+**Details:**
+- 🚀 Basic Frontend App created using **VITE** (React + JavaScript) and folder structure set up.
 - 🗂️ Initialized `App.jsx` & `main.jsx`
 - 📁 Created `src/pages/`
 - 📝 Made basic website pages:
@@ -30,5 +30,18 @@
     - `react-hot-toast`
     - `react-router`
     - `react-router-dom`
+
+</details>
+
+<details>
+<summary><strong>commit</strong> <code>9e837676da24a7e8f96c578a4155e9fbcf1fc328</code> <em>(HEAD → main)</em></summary>
+
+- **Author:** Om Kumar <<iitian-om@users.noreply.github.com>>
+- **Date:** Tue Jun 17 19:58:00 2025 +0530
+
+#### Frontend SetUp
+
+**Details:**
+- _(No additional details provided)_
 
 </details>

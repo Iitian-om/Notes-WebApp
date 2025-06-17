@@ -1,8 +1,9 @@
-// Importing necessary libraries
+// Importing necessary packages and libraries
 import React from "react";
+import toast from "react-hot-toast";
 import { Routes, Route } from "react-router"
 
-// Importing all the page components
+// Importing all the Website page components
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import CreatePage from "./pages/CreatePage";
@@ -11,7 +12,6 @@ import ViewNotePage from "./pages/ViewNotePage";
 import NoteDetailsPage from "./pages/NoteDetailsPage";
 import DevelopersPage from "./pages/DevelopersPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import toast from "react-hot-toast";
 
 // Main component for the App
 const Notes_WebApp = () => {
