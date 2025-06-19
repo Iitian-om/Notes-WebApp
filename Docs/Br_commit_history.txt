@@ -64,3 +64,29 @@ Author: Om Kumar <iitian-om@users.noreply.github.com>
 Date:   Sat Jun 14 18:39:52 2025 +0530
 
     Initialized project and REST API set up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)       
+        modified:   Docs/Br_commit_history.txt
+        modified:   Docs/commit_history.md
+        new file:   assets/divider.svg
+        modified:   frontend/src/pages/CreatePage.jsx     
+        modified:   frontend/src/pages/HomePage.jsx       
+        modified:   frontend/src/pages/NoteDetailsPage.jsx
+
