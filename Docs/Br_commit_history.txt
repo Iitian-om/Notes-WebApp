@@ -82,11 +82,26 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)       
-        modified:   Docs/Br_commit_history.txt
         modified:   Docs/commit_history.md
-        new file:   assets/divider.svg
-        modified:   frontend/src/pages/CreatePage.jsx     
-        modified:   frontend/src/pages/HomePage.jsx       
+        modified:   Docs/Br_commit_history.txt
+        modified:   frontend/src/pages/HomePage.jsx
+        modified:   frontend/src/pages/CreatePage.jsx   
         modified:   frontend/src/pages/NoteDetailsPage.jsx
+        
+        new file:   assets/divider.svg
+        new file:   frontend/src/lib/axios.js
+        new file:   frontend/src/lib/utils.js
+        new file:   frontend/src/components/Navbar.jsx       
+        new file:   frontend/src/components/NoteCard.jsx     
+        new file:   frontend/src/components/NotesNotFound.jsx
+        new file:   frontend/src/components/RateLimitedUI.jsx
+
+commit 707c147cff0d6580b381792728670153e3526d09 (HEAD -> main, origin/main)
+Author: Om Kumar <iitian-om@users.noreply.github.com>
+Date:   Fri Jun 20 00:10:11 2025 +0530
+
+    Build Basic Files
+
+
+| <details><summary><code>b2d22a...</code> <em>(HEAD → main)</em></summary><br> <ul><li>**Added proper documentation work**</li><li>Improved design and style of docs.</li><li>Updated commit history and clarified docs.</li><li>Kept documentation up-to-date with latest changes.</li></ul> </details> | _Documentation polish & clarity._ | Om Kumar | 2025-06-17 | 20:30:28 +0530 |
 

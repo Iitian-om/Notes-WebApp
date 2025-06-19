@@ -42,6 +42,16 @@
 #### Frontend SetUp
 
 **Details:**
-- _(No additional details provided)_
+- Made Website Homepage
+    modified:   frontend/src/pages/HomePage.jsx
+- Made components file
+    new file:   assets/divider.svg
+    new file:   frontend/src/components/Navbar.jsx
+    new file:   frontend/src/components/NoteCard.jsx
+    new file:   frontend/src/components/NotesNotFound.jsx
+    new file:   frontend/src/components/RateLimitedUI.jsx
+- Made utilities files
+    new file:   frontend/src/lib/axios.js
+    new file:   frontend/src/lib/utils.js
 
 </details>
